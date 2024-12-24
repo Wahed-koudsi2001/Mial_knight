@@ -2883,7 +2883,7 @@ body:has(.offcanvas) {
 .page-header-box h1 {
     display: inline-block;
     font-size: 80px;
-    font-weight: 300;
+    font-weight: 700;
     line-height: 1.1em;
     color: var(--primary-color);
     margin-bottom: 10px;
@@ -3487,7 +3487,6 @@ body:has(.offcanvas) {
 .faq-images {
     position: relative;
     margin-right: 30px;
-    padding: 140px 80px 0 0;
 }
 
 .faq-img-1 {
@@ -5501,11 +5500,15 @@ body:has(.offcanvas) {
     content: "";
     position: absolute;
     top: 50%;
-    right: 0;
-    transform: translate(15px, -50%);
+    left: 0;
+    transform: translate(0, -50%);
     height: 80%;
     width: 1px;
     background-color: var(--divider-color);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
 }
 
 .contact-info-box .info-box-1 .contact-info-item:nth-child(2n + 2):before {
@@ -5531,6 +5534,7 @@ body:has(.offcanvas) {
 
 .contact-info-box .info-box-2 .contact-item-content {
     width: calc(100% - 80px);
+    text-align: right;
 }
 
 .contact-item-content h3 {
