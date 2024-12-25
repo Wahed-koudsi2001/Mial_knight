@@ -1004,6 +1004,11 @@ body:has(.offcanvas) {
     font-size: 35px;
     color: #fff;
 }
+.mfp-iframe img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: contain !important;
+}
 
 .learn-more-circle {
     margin-left: -20px;
@@ -2012,7 +2017,7 @@ body:has(.offcanvas) {
 
 .project-tag a {
     display: block;
-    background-color: var(--divider-color);
+    background-color: #000;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     color: var(--text-color);
@@ -8016,4 +8021,11 @@ body:has(.offcanvas) {
     box-sizing: border-box;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
+}
+iframe img {
+    width: 100px;
+    height: 100px;
+}
+html {
+    margin: 0 !important;
 }

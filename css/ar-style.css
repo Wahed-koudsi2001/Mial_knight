@@ -151,3 +151,9 @@
     padding-left: 0;
     padding-right: 20px;
 }
+@media (max-width: 900px) {
+    .mfp-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

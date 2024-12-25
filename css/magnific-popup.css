@@ -285,7 +285,11 @@ button::-moz-focus-inner {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
     background: #000;
 }
-
+.mfp-iframe-scaler iframe img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: contain !important;
+}
 /* Main image in popup */
 img.mfp-img {
     width: auto;

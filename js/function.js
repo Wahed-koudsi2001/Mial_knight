@@ -70,11 +70,11 @@
     if ($('.agency-supports-slider').length) {
         const agency_supports_slider = new Swiper('.agency-supports-slider .swiper', {
             slidesPerView: 1,
-            speed: 2000,
+            speed: 1000,
             spaceBetween: 30,
             loop: true,
             autoplay: {
-                delay: 5000,
+                delay: 1000,
             },
             breakpoints: {
                 768: {
@@ -348,6 +348,17 @@
         });
     }
 
+    /* Popup Images */
+    if ($('.popup-image').length) {
+        $('.popup-image').magnificPopup({
+            type: 'image',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: true
+        });
+    }
+
     /* Why Choose us active Start */
     if ($('.why-choose-content').length) {
         var element = $('.why-choose-content');
@@ -405,7 +416,6 @@
             return false;
         })
     });
-
 
 
 })(jQuery);
