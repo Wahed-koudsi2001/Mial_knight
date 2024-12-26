@@ -157,3 +157,15 @@
         padding-right: 0;
     }
 }
+@media only screen and (max-width: 767px) {
+    .contact-info-box .info-box-1 .contact-item-content,
+    .contact-info-box .info-box-2 .contact-item-content {
+        text-align: right;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .contact-info-box .info-box-1 .icon-box,
+    .contact-info-box .info-box-2 .icon-box {
+        margin: 0 0 0 25px;
+    }
+}
