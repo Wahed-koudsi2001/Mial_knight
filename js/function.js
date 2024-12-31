@@ -69,7 +69,7 @@
 
     if ($('.agency-supports-slider').length) {
         const agency_supports_slider = new Swiper('.agency-supports-slider .swiper', {
-            slidesPerView: 2,
+            slidesPerView: 1,
             speed: 1000,
             spaceBetween: 30,
             loop: true,
