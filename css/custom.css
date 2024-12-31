@@ -431,8 +431,8 @@ header.main-header .header-sticky.active {
 }
 
 .navbar {
-    padding: 20px 0;
     align-items: center;
+    --bs-navbar-padding-y: 0;
 }
 
 .navbar-brand {
@@ -440,7 +440,9 @@ header.main-header .header-sticky.active {
     margin: 0;
     width: 90px;
 }
-
+.navbar-brand img {
+    padding: 10px;
+}
 .main-menu .nav-menu-wrapper {
     flex: 1;
     text-align: left;
@@ -5663,10 +5665,6 @@ body:has(.offcanvas) {
 /************************************/
 
 @media only screen and (max-width: 991px) {
-    .navbar {
-        padding: 15px 0;
-    }
-
     .slicknav_nav li,
     .slicknav_nav ul {
         display: block;
