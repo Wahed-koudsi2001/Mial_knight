@@ -3,11 +3,11 @@
 /************************************/
 
 :root {
-    --primary-color: #ffffff;
+    --primary-color: #000;
     --secondary-color: #1b1b1b;
     --text-color: #f5f5f4;
     --accent-color: #bf5ec6;
-    --dark-color: #000000;
+    --dark-color: whitesmoke;
     --divider-color: #ffffff1a;
     --dark-divider-color: #f7fbfa1a;
     --error-color: rgb(230, 87, 87);
@@ -60,7 +60,7 @@ h6 {
     margin: 0;
     font-weight: 700;
     line-height: 1.2em;
-    color: var(--primary-color);
+    color: #000;
 }
 
 figure {
@@ -193,6 +193,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
+
     background-color: var(--primary-color);
     border-radius: 100px;
     opacity: 20%;
@@ -342,7 +343,7 @@ body {
     font-size: 80px;
     font-weight: 300;
     line-height: 1.2em;
-    color: var(--primary-color);
+    color: #fff;
     margin-bottom: 0;
     cursor: none;
 }
@@ -357,9 +358,9 @@ body {
 
 .section-title h2 {
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.2em;
-    color: var(--primary-color);
+    color: #000;
     margin-bottom: 0;
     cursor: none;
 }
@@ -372,6 +373,7 @@ body {
 .section-title p {
     margin-top: 20px;
     margin-bottom: 0;
+    color: #000;
 }
 
 .section-content-btn .section-title-content {
@@ -436,6 +438,7 @@ header.main-header .header-sticky.active {
 .navbar-brand {
     padding: 0;
     margin: 0;
+    width: 90px;
 }
 
 .main-menu .nav-menu-wrapper {
@@ -458,7 +461,7 @@ header.main-header .header-sticky.active {
     font-size: 16px;
     font-weight: 600;
     padding: 15px !important;
-    color: var(--primary-color);
+    color: #fff;
     text-transform: capitalize;
     transition: all 0.3s ease-in-out;
 }
@@ -679,6 +682,7 @@ body:has(.offcanvas) {
     font-size: 22px;
     text-transform: capitalize;
     margin-bottom: 10px;
+    color: #fff;
 }
 
 .header-contact-box-content p {
@@ -1139,7 +1143,7 @@ body:has(.offcanvas) {
 }
 
 .about-agency-list {
-    border-left: 1px solid var(--divider-color);
+    border-left: 1px solid var(--accent-color);
     display: flex;
     flex-wrap: wrap;
     gap: 50px 30px;
@@ -1179,6 +1183,8 @@ body:has(.offcanvas) {
 
 .agency-item-content p:last-child {
     margin: 0;
+    color: #000;
+    font-weight: 500;
 }
 
 /************************************/
@@ -1190,8 +1196,9 @@ body:has(.offcanvas) {
 }
 
 .service-item {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: relative;
-    background: url("../images/service-bg.svg") no-repeat;
+    background: #fff;
     background-position: top left;
     background-size: auto;
     border: 1px solid var(--divider-color);
@@ -1218,8 +1225,8 @@ body:has(.offcanvas) {
     right: 0;
     width: 100%;
     height: 100%;
-    background: var(--secondary-color);
-    opacity: 40%;
+    /* background: var(--secondary-color);
+    opacity: 1; */
 }
 
 .service-item-header {
@@ -1240,7 +1247,6 @@ body:has(.offcanvas) {
 }
 
 .service-item:hover .service-arrow a img {
-    filter: brightness(0) invert(1);
     transform: rotate(45deg);
 }
 
@@ -1256,6 +1262,7 @@ body:has(.offcanvas) {
 
 .service-item-body p {
     margin-bottom: 0;
+    color: #000;
 }
 
 .service-footer {
@@ -1265,6 +1272,7 @@ body:has(.offcanvas) {
 .service-footer p {
     text-align: center;
     margin-bottom: 0;
+    color: #000;
 }
 
 .service-footer p a {
@@ -1304,7 +1312,7 @@ body:has(.offcanvas) {
     left: 20px;
     top: 20px;
     border-radius: 16px;
-    background: linear-gradient(180deg, #000000 75%, rgba(0, 0, 0, 0) 99.04%);
+    background: linear-gradient(180deg, #fff 75%, rgba(0, 0, 0, 0) 99.04%);
     width: calc(100% - 40px);
     height: calc(100% - 20px);
 }
@@ -1349,6 +1357,7 @@ body:has(.offcanvas) {
 
 .success-counter-item p {
     margin: 0;
+    color: #000;
 }
 
 .success-list-item {
@@ -1365,6 +1374,7 @@ body:has(.offcanvas) {
 
 .success-list-item p {
     margin: 0;
+    color: #000;
 }
 
 .success-list-item p span {
@@ -1413,12 +1423,14 @@ body:has(.offcanvas) {
 }
 
 .why-choose-item {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: relative;
-    border: 1px solid var(--divider-color);
+    border: 1px solid #000;
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 30px;
     padding: 25px 30px;
+    color: #000;
 }
 
 .why-choose-item:last-child {
@@ -1433,7 +1445,7 @@ body:has(.offcanvas) {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 50%, rgba(236, 0, 0, 0) 100%);
     width: 0;
     height: 100%;
     transition: all 0.4s ease-in-out;
@@ -1803,9 +1815,10 @@ body:has(.offcanvas) {
     right: 0;
     bottom: 0;
     left: 0;
-    background: var(--secondary-color);
+    background: #fff;
     opacity: 40%;
     z-index: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .digital-features-image {
@@ -1875,6 +1888,7 @@ body:has(.offcanvas) {
 
 .agency-supports-content p {
     margin: 0;
+    color: #000;
 }
 
 .agency-free-consultation {
@@ -1891,7 +1905,7 @@ body:has(.offcanvas) {
     position: relative;
 }
 
-.agency-supports-slider::before {
+/* .agency-supports-slider::before {
     content: "";
     display: block;
     position: absolute;
@@ -1902,9 +1916,9 @@ body:has(.offcanvas) {
     width: 215px;
     height: 100%;
     z-index: 2;
-}
+} */
 
-.agency-supports-slider::after {
+/* .agency-supports-slider::after {
     content: "";
     display: block;
     position: absolute;
@@ -1915,7 +1929,7 @@ body:has(.offcanvas) {
     width: 215px;
     height: 100%;
     z-index: 2;
-}
+} */
 
 .agency-supports-logo {
     background-color: #fff;
@@ -1961,7 +1975,7 @@ body:has(.offcanvas) {
 .our-Project-nav ul li a {
     position: relative;
     display: inline-block;
-    background-color: transparent;
+    background-color: #000;
     border: 1px solid var(--divider-color);
     border-radius: 10px;
     color: var(--text-color);
@@ -2125,9 +2139,10 @@ body:has(.offcanvas) {
     right: 0;
     bottom: 0;
     left: 0;
-    background: var(--secondary-color);
+    background: #fff;
     opacity: 40%;
     z-index: -1;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .testimonial-review-header {
@@ -2254,6 +2269,7 @@ body:has(.offcanvas) {
 .author-content p {
     text-transform: capitalize;
     margin: 0;
+    color: #000;
 }
 
 .testimonial-btn {
@@ -2692,16 +2708,12 @@ body:has(.offcanvas) {
 }
 
 .footer-work-together .work-together-btn a:hover span {
-    color: var(--primary-color);
+    color: #fff;
 }
 
 .footer-main {
     border-top: 1px solid var(--divider-color);
     padding: 60px 0 0;
-}
-
-.footer-logo {
-    margin-bottom: 60px;
 }
 
 .footer-contact-item {
@@ -2733,10 +2745,6 @@ body:has(.offcanvas) {
 .footer-contact-item .icon-box img {
     max-width: 18px;
     transition: all 0.3s ease-in-out;
-}
-
-.footer-contact-item:hover .icon-box img {
-    filter: brightness(0) invert(1);
 }
 
 .footer-contact-content {
@@ -2857,9 +2865,10 @@ body:has(.offcanvas) {
 }
 
 .footer-copyright {
-    border-top: 1px solid var(--dark-divider-color);
+    border-top: 1px solid var(--accent-color);
     padding: 60px 0;
     margin-top: 60px;
+    color: #000;
 }
 
 .footer-copyright-text {
@@ -2891,7 +2900,7 @@ body:has(.offcanvas) {
     font-size: 80px;
     font-weight: 700;
     line-height: 1.1em;
-    color: var(--primary-color);
+    color: #fff;
     margin-bottom: 10px;
     cursor: none;
 }
@@ -2915,7 +2924,7 @@ body:has(.offcanvas) {
 }
 
 .page-header-box ol li.breadcrumb-item a {
-    color: inherit;
+    color: #fff;
 }
 
 .page-header-box ol li.breadcrumb-item.active {
@@ -2926,7 +2935,7 @@ body:has(.offcanvas) {
     content: "\2a";
     font-family: "FontAwesome";
     font-size: 10px;
-    color: var(--primary-color);
+    color: #fff;
 }
 
 .our-scrolling-ticker.subpages-scrolling-ticker {
@@ -2970,8 +2979,8 @@ body:has(.offcanvas) {
     right: 0;
     bottom: 0;
     left: 0;
-    background: var(--secondary-color);
-    opacity: 40%;
+    background: #fff;
+    opacity: 1;
     z-index: -1;
 }
 
@@ -3012,6 +3021,7 @@ body:has(.offcanvas) {
 
 .mission-vision-content p {
     margin: 0;
+    color: #000;
 }
 
 .who-we-are {
@@ -3160,6 +3170,7 @@ body:has(.offcanvas) {
 
 .comapny-client-rating p {
     margin: 0;
+    color: #000;
 }
 
 .company-client-images {
@@ -3258,8 +3269,8 @@ body:has(.offcanvas) {
     right: 0;
     bottom: 0;
     left: 0;
-    background: var(--secondary-color);
-    opacity: 40%;
+    background: #fff;
+    opacity: 1;
     z-index: -1;
 }
 
@@ -3294,6 +3305,7 @@ body:has(.offcanvas) {
 
 .experts-counter-content p {
     margin: 0;
+    color: #000;
 }
 
 .executive-partners {
@@ -6214,7 +6226,8 @@ body:has(.offcanvas) {
     }
 
     .footer-logo {
-        margin-bottom: 40px;
+        width: 200px;
+        margin: 0 auto 50px;
     }
 
     .footer-contact-item {
@@ -7312,7 +7325,8 @@ body:has(.offcanvas) {
     }
 
     .footer-logo {
-        margin-bottom: 30px;
+        width: 150px;
+        margin: 0 auto 40px;
     }
 
     .footer-newsletter-form h3,
@@ -8085,8 +8099,8 @@ html {
 .navbar-nav .nav-link.show {
     color: var(--accent-color);
 }
-.footer-logo-2 {
-    width: 240px;
+.footer-logo {
+    width: 250px;
 }
 @media (max-width: 768px) {
     .whatsapp {
