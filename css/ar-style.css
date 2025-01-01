@@ -176,3 +176,8 @@
 .contact-info-box .info-box-2 .icon-box {
     margin: 0 0 0 30px;
 }
+@media only screen and (max-width: 767px) {
+    .contact-us-form {
+        margin: 0;
+    }
+}
