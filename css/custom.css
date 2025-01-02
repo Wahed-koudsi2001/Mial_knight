@@ -439,7 +439,7 @@ header.main-header .header-sticky.active {
     margin: 0;
     width: 90px;
 }
-        
+
 .main-menu .nav-menu-wrapper {
     flex: 1;
     text-align: left;
@@ -2715,6 +2715,7 @@ body:has(.offcanvas) {
 .footer-contact-item {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 30px;
 }
 
@@ -2831,15 +2832,11 @@ body:has(.offcanvas) {
     margin-right: 15px;
 }
 
-.footer-social-links ul li:last-child {
-    margin-right: 0;
-}
-
 .footer-social-links ul li a {
     border: 1px solid var(--accent-color);
     border-radius: 50%;
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -5655,7 +5652,9 @@ body:has(.offcanvas) {
 .error-page-content-body p {
     margin-bottom: 30px;
 }
-
+.about-footer {
+    text-align: left;
+}
 /************************************/
 /***      34. Responsive css      ***/
 /************************************/
@@ -8094,7 +8093,7 @@ html {
     color: var(--accent-color);
 }
 .footer-logo {
-    width: 250px;
+    width: 210px;
 }
 @media (max-width: 768px) {
     .whatsapp {
@@ -8111,5 +8110,12 @@ html {
     }
     .whatsapp span {
         display: none;
+    }
+    .footer-social-links ul li {
+        margin-right: 10px;
+    }
+    .footer-links {
+        text-align: center;
+        margin-bottom: 25px;
     }
 }
